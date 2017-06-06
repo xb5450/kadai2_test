@@ -1,4 +1,4 @@
 #!/bin/sh
-
-echo $a
-echo $b
+  
+ echo $a
+ echo $b
