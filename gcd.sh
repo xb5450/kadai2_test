@@ -1,7 +1,5 @@
 #!/bin/bash
 
-read -p "二つの自然数を入手してくだい：" a b
-
 num1=$a
 num2=$b
 r=1
