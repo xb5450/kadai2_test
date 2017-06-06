@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 read -p "二つの自然数を入手してくだい：" a b
 
@@ -12,4 +12,4 @@ do
   num2=$r
 done
 
- echo " $a and $b の最大公約数 = $num1"
+ echo " $:a and $b の最大公約数 = $num1"
