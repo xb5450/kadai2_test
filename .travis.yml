@@ -1,5 +1,4 @@
 language: bash
 script:
   - echo "test of kadai2 start"
-  - ./gcd_test.sh
   - ./gcd.sh
