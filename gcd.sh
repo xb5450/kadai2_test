@@ -10,4 +10,4 @@ do
   num2=$r
 done
 
- echo " $:a and $b の最大公約数 = $num1"
+ echo " $a and $b の最大公約数=$num1"
