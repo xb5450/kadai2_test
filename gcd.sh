@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sh gcd_test
+source ./gcd_test.sh
+
 num1=$a
 num2=$b
 r=1

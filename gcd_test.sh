@@ -1,4 +1,6 @@
 #!/bin/sh
   
- echo $a
- echo $b
+a=64
+b=88 
+echo $a
+echo $b
