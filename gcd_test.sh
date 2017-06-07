@@ -1,4 +1,6 @@
 #!/bin/sh
 
-echo $RANDOM
-echo $RANDOM
+a=$RANDOM
+b=$RANDOM
+echo $a
+echo $b
