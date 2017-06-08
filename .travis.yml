@@ -2,3 +2,4 @@ language: bash
 script:
   - echo "test of kadai2 start"
   - ./gcd.sh
+  - ./gcd_test.sh

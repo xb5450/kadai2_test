@@ -1,9 +1,7 @@
 #!/bin/bash
 
-source ./gcd_test.sh
-
-num1=$a
-num2=$b
+num1=$1
+num2=$2
 r=1
 until [ "$r" -eq 0 ]
 do
@@ -12,4 +10,4 @@ do
   num2=$r
 done
 
- echo " $a and $b の最大公約数=$num1"
+ echo "$1 $2 $num1"
