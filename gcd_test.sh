@@ -8,18 +8,24 @@ Error_Exit () {
     exit 1
 }
 
-echo 24 48 24 > $tmp-ans
-./gcd.sh 24 48 > $tmp-out || Error_Exit "test1-1"
-echo 8 128 8 > $tmp-ans
-./gcd.sh 8 128 > $tmp-out || Error_Exit "test2-1"
+echo 24 78 6 > $tmp-ans
+./gcd_err.sh 24 78 > $tmp-out || Error_Exit "test1-1"
+
 echo 7 77 7 > $tmp-ans
-./gcd.sh 7 77 > $tmp-out || Error_Exit "test3-1"
-echo 12 15 3 > $tmp-ans
-./gcd.sh 12 15 > $tmp-out || Error_Exit "test4-1"
+./gcd_err.sh 7 77 > $tmp-out || Error_Exit "test2-1"
+
+echo 3 8 1 > $tmp-ans
+./gcd_err.sh 3 8 > $tmp-out || Error_Exit "test1-1"
+
+echo 15 35 5 > $tmp-ans
+./gcd_err.sh 15 35 > $tmp-out || Error_Exit "test1-1"
 diff $tmp-ans $tmp-out || Error_Exit "test-2"
 
+echo gcd_err.sh need two inputs > $tmp-ans
+./gcd_err.sh 22 > $tmp-err && Error_Exit "test_err-1"
+diff $tmp-ans $tmp-err || Error_Exit "test_err-2"
+
 echo OK
-echo $tmp-ans
 rm -f $tmp-*
 exit 0
 
