@@ -3,7 +3,7 @@
 tmp=/tmp/$$
 
 Error_Exit () {
-    echo $1 1>&2
+    echo "$1" >&2
     rm -f $tmp-*
     exit 1
 }
