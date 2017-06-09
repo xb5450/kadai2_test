@@ -18,7 +18,7 @@ echo "12 15 3" > $tmp-ans
 ./gcd.sh 12 15> $tmp-out || Error_Exit "test4-1"
 diff $tmp-ans $tmp-out || Error_Exit "test-2"
 
-echo "2 inputs/" > $tmp-ans1
+echo "gcd.sh requires 2 inputs" > $tmp-ans1
 ./gcd.sh 22> $tmp-err && Error_Exit "test-err"
 diff $tmp-ans1 $tmp-err || Error_Exit "test-2" 
 
