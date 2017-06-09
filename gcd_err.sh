@@ -1,8 +1,10 @@
 #!/bin/bash
 
 if [ $# -lt 2 ]; then
-  echo "gcd_err.sh need two inputs"
-else
+  echo "gcd_err.sh need two inputs" 1>&2
+  exit 1
+fi
+
 num1=$1
 num2=$2
 r=1
@@ -13,4 +15,3 @@ do
   num2=$r
 done
  echo "$1 $2 $num1"
-fi
