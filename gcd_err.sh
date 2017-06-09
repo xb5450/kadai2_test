@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# -lt 2 ]; then
+  echo "gcd_err.sh requires 2 string inputs" >&2
+  exit 1
+fi
+
 num1=$1
 num2=$2
 r=1

@@ -3,4 +3,5 @@ script:
   - echo "test of kadai2 start"
   - ./gcd.sh
   - ./gcd_test.sh
+  - ./gcd_err.sh
   - ./test_err.sh
