@@ -18,10 +18,6 @@ echo 12 15 3 > $tmp-ans
 ./gcd.sh 12 15 > $tmp-out || Error_Exit "test4-1"
 diff $tmp-ans $tmp-out || Error_Exit "test-2"
 
-echo gcd.sh requires 2 string inputs > $tmp-ans
-./gcd.sh 22 > $tmp-err && Rrror_Exit "test-err"
-diff $tmp-ans $tmp-err || Error_Exit "test-2"
-
 echo OK
 echo $tmp-ans
 rm -f $tmp-*
