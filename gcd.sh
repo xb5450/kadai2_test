@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # airguments check
-if [ $# -lt 2 ]; then
+if [ $# -lt 1 ]; then
   echo "gcd.sh requires 2 string inputs"
   exit 1
 fi
