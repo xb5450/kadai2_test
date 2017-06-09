@@ -24,10 +24,6 @@ echo 15 35 5 > $tmp-ans
 ./gcd_err.sh 15 35 > $tmp-out || Error_Exit "test4-1"
 diff $tmp-ans $tmp-out || Error_Exit "test4-2"
 
-echo "gcd_err.sh need two inputs" > $tmp-ans
-./gcd_err.sh 2 > $tmp-out && Error_Exit "test_err1"
-diff $tmp-ans $tmp-out || Error_Exit "test4-2"
-
 echo OK
 rm -f $tmp-*
 exit 0
