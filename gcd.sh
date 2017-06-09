@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# arguments check
+if [ $# -lt 2 ]; then
+  echo "gcd.sh requires 2 inputs" 1 >&2
+  exit 1
+fi
+
+# main
 num1=$1
 num2=$2
 r=1
